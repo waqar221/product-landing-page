@@ -1,0 +1,224 @@
+<style>
+  header{
+    position: fixed;
+    text-align: center;
+    overflow: hidden;
+    background-color: #FF0000;
+    width: 100%;
+    height: 150px;
+    border:solid;
+    border-width: 20px;
+    border-color:#FF0000;
+
+
+  }
+  #email{
+    border-width: 5px;
+    border-radius: 5px;
+    width: 250px;
+    height: 30px;
+    border-color: #FF0000;
+  }
+  #submit{
+    transition: background-color ,0.5s ease;
+  }
+  #submit:hover{
+    background-color:#FF0000;
+    box-shadow: 0 0 0 5px;
+    border-radius: 25%;
+  }
+  #nav-bar{
+    width: 100%;
+    height: 0px;
+
+  }
+  #video{
+    margin-top: 30px;
+    border: solid;
+    border-color: #FF0000;
+    border-radius: 10px;
+    border-width: 10px;
+  }
+  #slogan{
+    margin-top: 180px;
+    padding: 50px;
+  }
+  .nav-link{
+    color:white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  padding: 5px 20px 5px 20px;
+  float: left;
+  transition:background-color ,.5s ease;
+  border:none;
+
+
+  }
+  #links{
+
+  }
+
+  .nav-link:hover{
+  background-color: #008fb3;
+
+  }
+  #Package1{
+
+    width: 100%;
+  }
+  #header-img{
+    width: 100px;
+    height: auto;
+  }
+  @media (max-width:800px)
+  {
+    display: flex;
+  }
+  .flex-container{
+    display: flex;
+    jusitfy-content: center;
+
+
+  }
+  body{
+    font-family: sans-serif;
+  }
+  .column {
+  float: left;
+  width: 100px;
+
+  border: solid;
+  border-color:#FF0000;
+  padding: 20px 10px 0px 0px;
+  height: 300px;
+
+}
+
+/* Clear floats after the columns */
+
+.row{
+width: 100%;
+justify-content: center;
+
+
+}
+.options{
+  margin: 20px;
+  background-color: #FFCCCB;
+  transition:box-shadow ,0.5s ease;
+  margin: auto;
+  border: solid;
+  border-radius: 5px;
+  border-width: 2px;
+  border-color: #FF0000;
+  width: 200px;
+  height: 350px;
+  padding: 20px;
+}
+.package-price{
+  border:solid;
+  border-color: red;
+  border-radius: 5px;
+  color: black;
+  text-align: center;
+  transition: background-color ,0.5s ease;
+}
+.package-price:hover{
+  background-color: grey;
+}
+h1{
+  text-align: center;
+}
+
+
+  </style>
+<html>
+<main>
+<body>
+  <header id="header">
+    <div class="header-img">
+
+    <img  id="header-img" src="https://seeklogo.com/images/G/gym-logo-F6864948D2-seeklogo.com.png">
+     </div>
+     <div id="nav-bar">
+    <nav>
+      <ul id="links">
+
+      <a  class="nav-link" href="#home">Home</a>
+
+      <a  class="nav-link" href="#about-us">About us</a>
+
+      <a  class="nav-link" href="#pricing">Pricing</a>
+
+</ul>
+    </nav>
+    </div>
+        </header>
+        <br>
+
+        <section id="home">
+        <center>
+          <h1 id="slogan">Finest Fitness Studio in the Town.</h1>
+        <iframe id="video" width="640" height="360" src="https://www.youtube.com/embed/rBUjOY12gJA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></section>
+
+        <section id="about-us"></section>
+        <section id="pricing"></section>
+        <center>
+
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <h1 style="text-align:center;">Register Now</h1>
+            <p>Enter your email address here.</p>
+          <input type="email" id="email" name="email" placeholder="Enter your email here" >
+          <br>
+
+          <input type="submit" id="submit" value="submit">
+          </form>
+          </center>
+
+           <div  id="pricing" class="flex-container">
+             <div class="options">
+
+             <div id="Package1">
+               <h1> Cardio</h1>
+             </div>
+           <div class="package-price">Rs 1000/-</div><div id="package1-description">
+             <p>Rowing.
+Swimming. ...
+Cycling. ...
+Kettlebells. ...
+Jumping Rope. ...
+Stair Climber. ...
+Running (moderate pace) ...
+Elliptical. These machines were originally designed to minimize impact on the knees and hips, but still allow a great workout.</p>
+<input type="select" class="package-price" value="select" style="text-align:center;">
+           </div>
+           </div>
+
+           <div class="options">
+
+           <div id="Package2">
+             <h1>Weight Loss</h1>
+           </div>
+         <div class="package-price">Rs 1500/-</div><div id="package2-description">
+           <p>High Intensity Interval Training. HIIT is the number one most effective way to burn body fat. It's an intense aerobic method that includes sprinting or tabata-styled workouts designed to condition the body in less time than steady state low intensity cardio.</p>
+          <input type="select" class="package-price" value="select" style="text-align:center;">
+        </div>
+         </div>
+        <div class="options">
+         <div id="Package3">
+           <h1>Muscle Gain</h1>
+         </div>
+       <div class="package-price">Rs 1500/-</div><div id="package1-description">
+         <p>One of the biggest advantages of this set-up is going to be an increased frequency of training. Since you will stimulate so many muscle fibers every other day, you will see a very high release of testosterone, promoting a good degree of muscle mass growth.</p>
+        <input type="select" class="package-price" value="select" style="text-align:center;" style="float: center;">
+      </div>
+       </div>
+     </div>
+
+
+  </body>
+  </main>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+    </script>
+</html>
